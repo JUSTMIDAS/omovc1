@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+    
+        <div class="nav-logo">
+          <img
+            class="logo-img"
+            src="default.png"
+            alt=""
+          />
+        </div>
+       
+      
+      <div class="p-menu1">
+        <div id="navbar" class="navigation" role="navigation">
+          <input id="toggle1" type="checkbox" />
+          <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+          </label>
+      
+        
+        <div class="menu1">
+          <a class="link1" href="index.html">home</a>
+           <a class="link1" href="studios.html">omo studios</a>  
+                     <a class="link1" href="ventures.html">omo ventures</a>
+  
+          <a class="link1" href="team.html">The team</a>  
+           
+            <a class="link1" href="sustainability.html">sustainability</a> 
+            <a class="link1" href="funds.html">funds</a>
+            <a href="startup.html" class="link1"> startup application</a>
+            <a href="lp.html"  class="link1">lp's login</a>
+
+            <a class="lin1 kbutton-nav" href="">Contact \[xs</a>
+          </div>
+        </div>
+  
+       
+    </header>
+  
+  <main class="startup-main">
+    <div class="container">
+        <form id="startup-form">
+            <!-- Step 1: Personal Information -->
+            <div class="step" id="step-1">
+                <h2>Personal Information</h2>
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <button type="button" class="next-btn">Next</button>
+            </div>
+
+            <!-- Step 2: Startup Information -->
+            <div class="step" id="step-2">
+                <h2>Startup Information</h2>
+                <input type="text" name="startup-name" placeholder="Startup Name">
+                <textarea name="description" placeholder="Description"></textarea>
+                <select name="industry">
+                    <option value="">Select Industry</option>
+                    <!-- Add industry options here -->
+                </select>
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+
+            <!-- Step 3: Founders' Information -->
+            <div class="step" id="step-3">
+                <h2>Founders' Information</h2>
+                <!-- Founder 1 fields -->
+                <input type="text" name="founder-1-name" placeholder="Founder 1 Name">
+                <input type="email" name="founder-1-email" placeholder="Founder 1 Email">
+                <input type="tel" name="founder-1-phone" placeholder="Founder 1 Phone Number">
+                <!-- Founder 2 fields (optional) -->
+                <input type="text" name="founder-2-name" placeholder="Founder 2 Name">
+                <input type="email" name="founder-2-email" placeholder="Founder 2 Email">
+                <input type="tel" name="founder-2-phone" placeholder="Founder 2 Phone Number">
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+
+            <!-- Step 4: Additional Information -->
+            <div class="step" id="step-4">
+                <h2>Additional Information</h2>
+                <select name="hear-about-us">
+                    <option value="">How did you hear about us?</option>
+                    <!-- Add options here -->
+                </select>
+                <textarea name="additional-info" placeholder="Any other relevant details"></textarea>
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+    <div  class="links-contacts">
+<div class="footer-nav">
+<h4>quick links</h4>
+<a href="index.html" > home</a> 
+<a href="studios.html">omo studio</a>
+<a href="ventures.html">omo venture</a>
+ <a href="team.html">the team</a>
+<a href="sustainability.html">sustainability</a>
+<a href="funds.html"> omo funds</a>
+<a href="startup.html"> omo startups</a>
+
+<a href="">contact</a>
+</div>
+<div>
+<h4>
+  contact us 
+</h4>
+<p>
+  chicago 
+  <br>
+  167n green st. <br>
+  4th floor
+  <br>
+  chucago, il 60607
+  phone:09000000000
+</p>
+</div>
+</div>
+
+<div class="text">
+<h1>
+  OMO
+</h1>
+<h1>
+VENTURES</h1>
+</div>
+
+<p class="linkedin-text">follow us____ <a href=""><i class="fa-brands fa-linkedin-in" style="color: blue;"></i></a></p>
+
+<a href="lp.html" class="patner-login"> patner-login</a>
+<br class="linebreak">
+<p class="linebreak">Copyright &copy; <a href="#home" style="text-decoration: none;">omo.vc</a> - All rights reserved
+</p>
+
+  </footer>
+
+      <script src="script.js"></script>
+</body>
+</html>
