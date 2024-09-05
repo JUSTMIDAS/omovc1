@@ -58,17 +58,17 @@ a {
 }
 
 #toggle1:checked + .hamburger1 .top {
-  transform: rotate(-45deg);
+  transform: rotate(35deg);
   margin-top: 22.5px;
 }
 
 #toggle1:checked + .hamburger1 .meat {
-  transform: rotate(45deg);
+  transform: rotate(0deg);
   margin-top: -5px;
 }
 
 #toggle1:checked + .hamburger1 .bottom {
-  transform: scale(0);
+  transform: scale(25deg);
 }
 
 #toggle1:checked ~ .menu1 {
@@ -136,6 +136,26 @@ transform: translateX(-30px);
   width: 100%;
   height: 100%;
 }
+header span{
+  color: #fff;
+  font-size: 0.8em;
+}
+ .menu1 > .mail-link{
+  text-decoration: underline;
+  color: #000;
+  background-color: #fff;
+  padding: 1em;
+padding: auto;
+min-width: 30vw;
+margin: auto;
+font-weight: 800;
+
+}
+.mail-link:hover{
+  color:#ffba08;
+  
+}
+
 
 
 
@@ -172,10 +192,13 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+ line-height: 20px;
 }
 .footer-nav {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  word-wrap: break-word;
 }
 .links-contacts {
   display: flex;
@@ -186,11 +209,24 @@ footer {
 .footer-nav a:hover {
   color: #ffc533;
 }
+
+.footer-nav a:hover {
+  color: #ffc533;
+}
+.location a:hover{
+  color: #ffc533;
+
+}
 .links-contacts h4 {
   color: #423d3d;
   text-transform: capitalize;
   padding-top: 1em;
 }
+.links-contacts{
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+word-wrap: break-word;}
 .links-contacts p,
 a {
   color: #fff;
@@ -232,6 +268,8 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-content: space-between;
 }
+
+.fo
 
 .dash {
   opacity: 0.2;
@@ -313,7 +351,7 @@ video {
   color: #ffc533;
   text-transform: uppercase;
   font-weight: bolder;
-  font-size: 5em;
+  font-size: 15vw;
   text-shadow: 1px 2px 4px black;
   text-align: center;
 word-break: break-all;
@@ -464,19 +502,17 @@ word-break: break-all;
   background-color: #000;
 }
 
-.studios-main h1 {
-  text-transform: uppercase;
-  color: #ffba08;
-  background-color: #fff;
-  font-style: italic;
-  font-size: 3em;
-  word-wrap: break-word;
-  width: auto;
+
+.studios-main> p{
+  margin: 0;
+  padding: 1em;
   text-align: center;
-  text-shadow: 1px 2px 4px #000;
-  margin: 1em;
-  padding: 3px;
-  animation: slideIn 3s;
+}
+.studio-div span{
+  color: #ffba08;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
 .studios-main i {
   color: #ffba08;
@@ -541,23 +577,59 @@ word-break: break-all;
   margin-top: 2em;
 }
 
-.faq{
-  padding: 1em;
-}
 
-.faq h2, .process h2{
+
+.cwwu{
+  padding: 2em;
+  background-color: #000;
+  
+}
+ .work-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  width: 70vw;
+  padding: 2em;
+  margin: auto;
+ }
+ .work-box h1{
   color: #ffba08;
+  font-size: 1.5em;
 text-transform: uppercase;
+word-wrap: break-word;
+
 margin: 1em;
 text-shadow: 1px 2px 4px #00000070;
 }
 
 
- .process i{
-  color: #000;
+ .work-box i{
+  color: #fff;
   font-size: 1.5em;
 
  }
+ .work-box a{
+  color: #000;
+  font-weight:  bold;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1em;
+  margin: auto;
+  
+ }
+
+ .work-box a:hover{
+  color: #fff;
+  font-weight:  bold;
+  background-color: #ffba08;
+  border-radius: 20px;
+  padding: 1.3em ;
+  transition: all 0.2s ease-in-out;
+  margin: auto;
+  
+ }
+ 
 
 
 
@@ -701,6 +773,10 @@ color: #ffba08;
   width: 80vw;
   height: 10vh;
   background: #000;
+}
+.hwi svg{
+  width: 100px;
+ 
 }
 .big-box:last-of-type {
   margin-bottom: 8em;
@@ -866,6 +942,8 @@ margin-bottom: 2em;
 .sustainability-main {
   background-color: #000;
   color: #fff;
+  min-height: 100vh;
+  position: relative;
   padding: 2em;
  
 }
@@ -875,7 +953,7 @@ margin-bottom: 2em;
   text-transform: uppercase;
   color: #ffba08;
   text-shadow: 1px 2px 4px #000;
-  background: #fff;
+
 word-wrap: break-word;  padding: 0.5em;
   text-align: center;
   animation: fadeFromTop 3s;
@@ -892,7 +970,7 @@ word-wrap: break-word;  padding: 0.5em;
 }
 
 .sustainability-main p {
-  padding-bottom: 1em;
+  padding-bottom: 10em;
 }
 
 .sustainability-main span {
@@ -967,11 +1045,11 @@ font-size: 1.2em;
 
 /* 
 
-funds
-funds */
+angels
+angels */
 
 
-.funds-main{
+.angels-main{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -980,10 +1058,10 @@ funds */
    font-weight: 700;
  }
  
- .funds-main h1, .approaches h1{
+ .angels-main h1, .approaches h1{
    text-transform: uppercase;
    color: #ffba08;
-   font-style: italic;
+  
    font-size: 3em;
    word-wrap: break-word;
    text-align: center;
@@ -992,227 +1070,170 @@ funds */
    animation: fadeFromTop 3s;
  
  }
- .funds-main img{
+ .angels-main img{
    padding: 2em;
    margin-bottom: 1em;
    animation: grow 4s;
  }
- 
- .funds-main i{
-   color: #ffba08;
-   font-size: 1.1em;
-   text-transform: uppercase;
+ .angels-main p{
+ text-align: center;
  }
- .funds-main h3{
- padding: 0em 1.5em ;
- }
- .approaches {
-   padding: 1em;
-
+ .angels-main img{
+  width: 70vw;
+  fill: #ffba08;
+  color: #4CAF50;
  }
  
- .funds-main h2{
-   color: #ffba08;
- padding-top: 1em;
- font-size: 1.7em;
- text-decoration: underline;
- text-shadow: 1px 2px 4px #00000034;
- padding-bottom: 1px;
+ 
+ 
 
- }
- .funds-main h3{
+
+ .angels-main h4{
    color: #000000;
  padding-top: 1em;
  font-size: 1em;
- text-decoration: underline;
- text-shadow: 1px 2px 2px #000;
- padding-bottom: 6px;
- animation: fadeIn 3s;
- }
- .funds-main h4{
-   color: #000000;
- padding-top: 1em;
- font-size: 1em;
- text-decoration: underline;
+text-transform: uppercase;
  text-shadow: 1px 2px 2px #000;
  padding-bottom: 6px;
  }
- .funds-main p{
+ .angels-main p{
   animation: slideIn 6s;
  }
  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* come work with us */
-
-
-.cwwu{
-  padding: 2em;
-  
-}
- .work-box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #000;
-  width: 70vw;
-  padding: 2em;
-  margin: auto;
- }
- .work-box h1{
-  color: #ffba08;
-  font-size: 1.5em;
-text-transform: uppercase;
-word-wrap: break-word;
-
-margin: 1em;
-text-shadow: 1px 2px 4px #00000070;
-}
-
-
- .work-box i{
-  color: #fff;
-  font-size: 1.5em;
-
- }
- .work-box a{
-  color: #000;
-  font-weight:  bold;
-  background-color: white;
-  border-radius: 20px;
+ .angels-main button{
   padding: 1em;
-  margin: auto;
-  
- }
-
- .work-box a:hover{
-  color: #fff;
-  font-weight:  bold;
-  background-color: #ffba08;
+  margin: 1em;
   border-radius: 20px;
-  padding: 1.3em ;
-  transition: all 0.2s ease-in-out;
-  margin: auto;
-  
- }
+  text-transform: uppercase;
+font-weight: 600; 
+background-color: #ffba08;
+}
  
+.angels-main button:hover{
+animation: grow .3s ease-in-out;
+animation: name duration timing-function delay iteration-count direction fill-mode;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1797,6 +1818,16 @@ justify-self: center;
 .first a:hover, .fourth a:hover{
   color: #fff;
 }
+.one{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.one p{
+  width: 50vw;
+  text-align: center;
+  justify-self: center;
+}
 
 
 
@@ -1811,7 +1842,10 @@ justify-self: center;
   
   flex-direction: row;
 }
-
+.studios-main > p{
+margin: auto;
+  width: 50vw;
+}
 
 
 
@@ -1878,9 +1912,9 @@ flex-wrap: wrap;
 
 
 
-/* funds */
+/* angels */
 
-.funds-main{
+.angels-main{
   font-size: 2em;
 }
 
