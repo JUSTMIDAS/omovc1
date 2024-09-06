@@ -1,31 +1,17 @@
-// Get the form element
-const form = document.getElementById('startup-form');
+const container = document.querySelector('.third');
+const scrollDistance = 300; // Adjust the scroll distance as needed
+let currentPosition = 0;
 
-// Get all steps
-const steps = document.querySelectorAll('.step');
-
-// Initialize current step
-let currentStep = 0;
-
-// Add event listener to form
-form.addEventListener('click', (e) => {
-    if (e.target.classList.contains('next-btn')) {
-        currentStep++;
-        updateForm();
-    } else if (e.target.classList.contains('prev-btn')) {
-        currentStep--;
-        updateForm();
-    }
-});
-
-// Function to update the form
-function updateForm() {
-    steps.forEach((step) => {
-        step.classList.remove('active');
-    });
-    steps[currentStep].classList.add('active');
+function scrollDivs() {
+  currentPosition += scrollDistance;
+  if (currentPosition > container.scrollWidth - container.clientWidth) {
+    currentPosition = 0;
+  }
+  
+  container.scrollTo({
+    left: currentPosition,
+    behavior: 'smooth'
+  });
 }
 
-// Initialize the first step
-steps[currentStep].classList.add('active');
-
+setInterval(scrollDivs, 1000); // Adjust the interval time (in milliseconds) as needed
