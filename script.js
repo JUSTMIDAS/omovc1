@@ -1,5 +1,5 @@
 const container = document.querySelector('.third');
-const scrollDistance = 300; // Adjust the scroll distance as needed
+const scrollDistance = 100; // Adjust the scroll distance as needed
 let currentPosition = 0;
 
 function scrollDivs() {
@@ -14,4 +14,4 @@ function scrollDivs() {
   });
 }
 
-setInterval(scrollDivs, 1000); // Adjust the interval time (in milliseconds) as needed
+setInterval(scrollDivs, 2000); // Adjust the interval time (in milliseconds) as needed
