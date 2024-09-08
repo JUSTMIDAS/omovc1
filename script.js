@@ -14,4 +14,4 @@ function scrollDivs() {
   });
 }
 
-setInterval(scrollDivs, 2000); // Adjust the interval time (in milliseconds) as needed
+setInterval(scrollDivs, 1000); // Adjust the interval time (in milliseconds) as needed
