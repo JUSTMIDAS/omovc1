@@ -1,4 +1,3 @@
-const container = document.querySelector('.third');
  const container = document.querySelector('.third');
 const scrollDistance = 100; // Adjust the scroll distance as needed
  let currentPosition = 0;
