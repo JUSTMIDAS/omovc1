@@ -1,5 +1,5 @@
 const container = document.querySelector('.third');
-const scrollDistance = 150; // Adjust the scroll distance as needed
+const scrollDistance = 50; // Adjust the scroll distance as needed
 let currentPosition = 0;
 
 function scrollDivs() {
